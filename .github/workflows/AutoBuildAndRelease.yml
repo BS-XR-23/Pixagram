@@ -28,16 +28,19 @@ jobs:
             Library-build-
             Library-
       - uses: game-ci/unity-builder@v2
+        id: buildStep
         with:
           targetPlatform: Android
           buildName: UnityGram
 
-      - name: Release
-        uses: ridedott/release-me-action@master
+      - name: GitHub Release Action
+        uses: 1fxe/GitHub-Release-Action@main
         with:
-          release-branches: '["main"]'
-          release-assets: |
-            ./build/Android/UnityGram.apk
+          release_token: ${{ secrets.RELEASE_TOKEN }}
+          release_tag: ${{ steps.buildStep.outputs.buildVersion }}
+          release_title: Github-Release-Action ${{ steps.buildStep.outputs.buildVersion }}
+          release_file: ./build/Android/UnityGram.apk
+            
            
 
 
