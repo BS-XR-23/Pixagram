@@ -9,7 +9,7 @@ public class PostImageResponsive : MonoBehaviour
     public Sprite image;
     public float aspectRatio;
     
-    private void Start()
+    private void Awake()
     {
         Debug.Log(image.rect.height);
         Debug.Log(image.bounds.size.y);
