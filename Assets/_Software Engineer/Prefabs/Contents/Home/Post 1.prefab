@@ -952,9 +952,9 @@ GameObject:
   - component: {fileID: 101804871790928594}
   - component: {fileID: 101804871790928596}
   - component: {fileID: 101804871790928597}
-  - component: {fileID: 2183530692671228278}
+  - component: {fileID: 6120870561362791786}
   m_Layer: 5
-  m_Name: Post
+  m_Name: Post 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &2183530692671228278
+--- !u!114 &6120870561362791786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
