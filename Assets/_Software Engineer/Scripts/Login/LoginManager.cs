@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class LoginManager : MonoBehaviour
 {
-    [Header("InputFields")] 
+    [Header("InputFields")] [Space(5)]
     
     [SerializeField] private TMP_InputField userNameInputField;
     [SerializeField] private TMP_InputField passWordInputField;
     
 
-    [Space(12)] [Header("Buttons")] 
+    [Space(12)] [Header("Buttons")] [Space(5)]
     
     [SerializeField] private UnityEngine.UI.Button logInButton;
     [SerializeField] private UnityEngine.UI.Button forgetYourLogInDetailsButton;
@@ -20,7 +20,7 @@ public class LoginManager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Button dontHaveAnAccountButton;
 
 
-    [Space(12)] [Header("GameObjects")]
+    [Space(12)] [Header("GameObjects")] [Space(5)]
 
     [SerializeField] private GameObject loginScene;
     [SerializeField] private GameObject homeScene;
@@ -34,9 +34,9 @@ public class LoginManager : MonoBehaviour
         UnityEngine.Assertions.Assert.IsNotNull(dontHaveAnAccountButton);
         
         logInButton.onClick.AddListener(On_Click_LoginButton);
-        logInButton.onClick.AddListener(On_Click_ForgetYourLogInDetailsButton);
-        logInButton.onClick.AddListener(On_Click_LogInWithFacebookButton);
-        logInButton.onClick.AddListener(On_Click_dontHaveAnAccountButton);
+        forgetYourLogInDetailsButton.onClick.AddListener(On_Click_ForgetYourLogInDetailsButton);
+        logInWithFacebookButton.onClick.AddListener(On_Click_LogInWithFacebookButton);
+        dontHaveAnAccountButton.onClick.AddListener(On_Click_DontHaveAnAccountButton);
     }
     
     void On_Click_LoginButton()
@@ -55,7 +55,7 @@ public class LoginManager : MonoBehaviour
         
     }
     
-    void On_Click_dontHaveAnAccountButton()
+    void On_Click_DontHaveAnAccountButton()
     {
         
     }

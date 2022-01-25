@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 101804870885977034}
   - component: {fileID: 101804870885977033}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button_Ellipsis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 101804871390536748}
   - component: {fileID: 101804871390536747}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image_Profile Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 101804871517508209}
   - component: {fileID: 101804871517508208}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text_Account Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,6 +953,7 @@ GameObject:
   - component: {fileID: 101804871790928596}
   - component: {fileID: 101804871790928597}
   - component: {fileID: 6120870561362791786}
+  - component: {fileID: 2410002967556510159}
   m_Layer: 5
   m_Name: Post 1
   m_TagString: Untagged
@@ -1074,6 +1075,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accountName: {fileID: 101804871517508208}
+--- !u!114 &2410002967556510159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101804871790928592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd51f9cffd7fdd14e835360589ed7d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accountName: {fileID: 101804871517508208}
+  views: {fileID: 101804871808907171}
+  comments: {fileID: 101804872215394866}
+  ellipsisButton: {fileID: 101804870885977033}
+  reactButton: {fileID: 101804872072514038}
+  unReactButton: {fileID: 5448922212180155867}
+  commentButton: {fileID: 101804871856720812}
+  shareButton: {fileID: 101804870820309897}
+  addToCollectionButton: {fileID: 101804870593908902}
+  imageHolder: {fileID: 4632213296741818301}
 --- !u!1 &101804871808907169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1109,7 @@ GameObject:
   - component: {fileID: 101804871808907172}
   - component: {fileID: 101804871808907171}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text_Views
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1511,7 @@ GameObject:
   - component: {fileID: 101804872215394866}
   - component: {fileID: 1736575400942212585}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Text_Comments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
