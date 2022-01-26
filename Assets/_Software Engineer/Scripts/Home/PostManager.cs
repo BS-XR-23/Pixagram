@@ -22,12 +22,11 @@ public class PostManager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Button shareButton;
     [SerializeField] private UnityEngine.UI.Button addToCollectionButton;
     [SerializeField] private ButtonDoubleClickListener imageHolder;
-
-
-    [Space(12)] [Header("Game Objects")] [Space(5)] 
     
-    [SerializeField] private GameObject commentsScene;
-    [SerializeField] private GameObject shareScene;
+    
+    private GameObject _commentsScene;
+    private GameObject _shareScene;
+    private GameObject _ellipsisScene;
     
     
 
@@ -47,6 +46,11 @@ public class PostManager : MonoBehaviour
         shareButton.onClick.AddListener(On_Click_ShareButton);
         addToCollectionButton.onClick.AddListener(On_Click_AddToCollectionButton);
         imageHolder.onDoubleClick.AddListener(On_Click_imageHolder);
+        
+        _commentsScene = GameObject.Find("Comments");
+        _shareScene = GameObject.Find("Share");
+        _ellipsisScene = GameObject.Find("Ellipsis");
+
     }
 
     private void On_Click_imageHolder()
@@ -61,12 +65,12 @@ public class PostManager : MonoBehaviour
 
     private void On_Click_ShareButton()
     {
-        shareScene.SetActive(true);
+        _shareScene.GetComponent<SlideingUI>().SlideUp();
     }
 
     private void On_Click_CommentButton()
     {
-        commentsScene.SetActive(true);
+        _commentsScene.GetComponent<SlideingUI>().SlideUp();
     }
 
     private void On_Click_UnReactButton()
@@ -81,6 +85,6 @@ public class PostManager : MonoBehaviour
 
     private void On_Click_EllipsisButton()
     {
-        throw new NotImplementedException();
+        _ellipsisScene.GetComponent<SlideingUI>().SlideUp();
     }
 }
