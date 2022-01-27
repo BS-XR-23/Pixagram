@@ -22,6 +22,8 @@ public class ProfileManager : MonoBehaviour
     [SerializeField] private GameObject createPostScene;
     [SerializeField] private GameObject shopScene;
     [SerializeField] private GameObject profileScene;
+    [SerializeField] private GameObject settingsSlide;
+    [SerializeField] private GameObject createSlide;
     
     private void Start()
     {
@@ -73,12 +75,12 @@ public class ProfileManager : MonoBehaviour
 
     private void On_Click_SettingsButton()
     {
-        throw new System.NotImplementedException();
+        settingsSlide.GetComponent<SlideingUI>().SlideUp();
     }
 
     private void On_Click_NewButton()
     {
-        throw new System.NotImplementedException();
+        createSlide.GetComponent<SlideingUI>().SlideUp();
     }
 
     private void InactiveProfileScene()
