@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using PolyAndCode.UI;
 using UnityEngine;
-
+using Random = UnityEngine.Random;
 
 
 public struct AccountInfo
 {
    public string AccountName;
+   public int ColorR;
+   public int ColorG;
+   public int ColorB;
+   public int ColorA;
 }
 
 public class PostDataSource : MonoBehaviour, IRecyclableScrollRectDataSource
@@ -35,6 +39,10 @@ public class PostDataSource : MonoBehaviour, IRecyclableScrollRectDataSource
       {
          AccountInfo obj = new AccountInfo();
          obj.AccountName = i + "_Name";
+         obj.ColorR = Random.Range(0, 255);
+         obj.ColorG = Random.Range(0, 255);
+         obj.ColorB = Random.Range(0, 255);
+         obj.ColorA = 255;
          _accountInfos.Add(obj);
       }
    }
