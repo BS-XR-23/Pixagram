@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HomeManager
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HomeManager
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="_Software_Engineer.Scripts.Home.HomeManager">
+  
+  
+  <h1 id="_Software_Engineer_Scripts_Home_HomeManager" data-uid="_Software_Engineer.Scripts.Home.HomeManager" class="text-break">Class HomeManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">HomeManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="_Software_Engineer.Scripts.Home.html">_Software_Engineer.Scripts.Home</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="_Software_Engineer_Scripts_Home_HomeManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HomeManager : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ActivityButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ActivityButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton">On_Click_ActivityButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Activity&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_ActivityButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_HomeButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_HomeButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton">On_Click_HomeButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Home&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_HomeButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_MessengerButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_MessengerButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton">On_Click_MessengerButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Messenger&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_MessengerButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_NewPostButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_NewPostButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton">On_Click_NewPostButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_New post&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_NewPostButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ProfileButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ProfileButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton">On_Click_ProfileButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Profile&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_ProfileButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_SearchButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_SearchButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton">On_Click_SearchButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Search&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_SearchButton()</code></pre>
+  </div>
+  
+  
+  <a id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ShopButton_" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*"></a>
+  <h4 id="_Software_Engineer_Scripts_Home_HomeManager_On_Click_ShopButton" data-uid="_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton">On_Click_ShopButton()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/_Software_Engineer.Scripts.Home.HomeManager.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This function will call when the &quot;Button_Shop&quot; will be pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void On_Click_ShopButton()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

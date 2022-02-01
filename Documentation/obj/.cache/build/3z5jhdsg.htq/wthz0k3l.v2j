@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Global
+   | Example Unity documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Global
+   | Example Unity documentation ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Global">
+  
+  <h1 id="Global" data-uid="Global" class="text-break">Namespace Global
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Global.AlphabetData.html">AlphabetData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.AndroidFileTest.html">AndroidFileTest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.BaseToggleModifier.html">BaseToggleModifier</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.BoundToParent.html">BoundToParent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ButtonDoubleClickListener.html">ButtonDoubleClickListener</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ButtonHandler.html">ButtonHandler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ButtonLongPressListener.html">ButtonLongPressListener</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.CallEngine.html">CallEngine</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.CallManager.html">CallManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ChatController.html">ChatController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ChatMessage.html">ChatMessage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ChatSystem.html">ChatSystem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ChatUIManager.html">ChatUIManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ConversationController.html">ConversationController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.Conversations.html">Conversations</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.DemoCell.html">DemoCell</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.DropdownSample.html">DropdownSample</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.EmojiController.html">EmojiController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.EnvironmentTypeToggleModifier.html">EnvironmentTypeToggleModifier</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.EnvMapAnimator.html">EnvMapAnimator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.FadeInFadeOutMassage.html">FadeInFadeOutMassage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.FollowTransform.html">FollowTransform</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.HomeManager.html">HomeManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ImageBGToggler.html">ImageBGToggler</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.InputFieldForScreenKeyboardPanelAdjuster.html">InputFieldForScreenKeyboardPanelAdjuster</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyboardConfiguration.html">KeyboardConfiguration</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyboardKeyConfiguration.html">KeyboardKeyConfiguration</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyboardKeyPressResponse.html">KeyboardKeyPressResponse</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyboardLayout.html">KeyboardLayout</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyboardManager.html">KeyboardManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyButton.html">KeyButton</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.LoginManager.html">LoginManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.MessengerManager.html">MessengerManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.NativeFilePickerTest.html">NativeFilePickerTest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.NativeGalleryTest.html">NativeGalleryTest</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.NewPost02Manager.html">NewPost02Manager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.NewPostManager.html">NewPostManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.openURL.html">openURL</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.PoolerBase-1.html">PoolerBase&lt;T&gt;</a></h4>
+      <section><p sourcefile="api/Global.PoolerBase-1.yml" sourcestartlinenumber="2" sourceendlinenumber="4">A simple base class to simplify object pooling in Unity 2021.
+Derive from this class, call InitPool and you can Get and Release to your hearts content.
+If you enjoyed the video or this script, make sure you give me a like on YT and let me know what you thought :)</p>
+</section>
+      <h4><a class="xref" href="Global.PostCell.html">PostCell</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.PostDataSource.html">PostDataSource</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.PostImageResponsive.html">PostImageResponsive</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.PostManager.html">PostManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ProfileManager.html">ProfileManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.RandomColorPicker.html">RandomColorPicker</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.RecyclableScrollerDemo.html">RecyclableScrollerDemo</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.RTCToken.html">RTCToken</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ScrollViewObjectPool.html">ScrollViewObjectPool</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.SearchManager.html">SearchManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.Shapes2DPrefs.html">Shapes2DPrefs</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ShopManager.html">ShopManager</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ShowImageFromDevice.html">ShowImageFromDevice</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.SlideingUI.html">SlideingUI</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.TestHelloUnityVideo.html">TestHelloUnityVideo</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.TestHome.html">TestHome</a></h4>
+      <section><p sourcefile="api/Global.TestHome.yml" sourcestartlinenumber="2" sourceendlinenumber="2">TestHome serves a game controller object for this application.</p>
+</section>
+      <h4><a class="xref" href="Global.TextKeyboard.html">TextKeyboard</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.Token.html">Token</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.TransformExtention.html">TransformExtention</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.UIExtension.html">UIExtension</a></h4>
+      <section><p sourcefile="api/Global.UIExtension.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Extension methods for Rect Transform</p>
+</section>
+      <h4><a class="xref" href="Global.VertLayoutScalar.html">VertLayoutScalar</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Global.AccountInfo.html">AccountInfo</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.ContactInfo.html">ContactInfo</a></h4>
+      <section><p sourcefile="api/Global.ContactInfo.yml" sourcestartlinenumber="2" sourceendlinenumber="4">Demo controller class for Recyclable Scroll Rect. 
+A controller class is responsible for providing the scroll rect with datasource. Any class can be a controller class. 
+The only requirement is to inherit from IRecyclableScrollRectDataSource and implement the interface methods</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Global.ChatMessage.MessageType.html">ChatMessage.MessageType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.FollowTransform.position.html">FollowTransform.position</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.KeyButton.AnimationState.html">KeyButton.AnimationState</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Global.TextKeyboard.KeyboardState.html">TextKeyboard.KeyboardState</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Example Unity documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
