@@ -4,3 +4,5 @@
   items:
   - uid: _Software_Engineer.Scripts.Home.HomeManager
     name: HomeManager
+  - uid: _Software_Engineer.Scripts.Home.PostManager
+    name: PostManager

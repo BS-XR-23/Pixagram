@@ -1,0 +1,405 @@
+### YamlMime:ManagedReference
+items:
+- uid: _Software_Engineer.Scripts.Home.PostManager
+  commentId: T:_Software_Engineer.Scripts.Home.PostManager
+  id: PostManager
+  parent: _Software_Engineer.Scripts.Home
+  children:
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+  - _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+  - _Software_Engineer.Scripts.Home.PostManager.SetAccountName(System.String)
+  - _Software_Engineer.Scripts.Home.PostManager.SetFirstComment(System.String)
+  - _Software_Engineer.Scripts.Home.PostManager.SetViews(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PostManager
+  nameWithType: PostManager
+  fullName: _Software_Engineer.Scripts.Home.PostManager
+  type: Class
+  source:
+    id: PostManager
+    path: ''
+    startLine: 37485
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  syntax:
+    content: 'public class PostManager : MonoBehaviour'
+    content.vb: >-
+      Public Class PostManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetAccountName(System.String)
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.SetAccountName(System.String)
+  id: SetAccountName(System.String)
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: SetAccountName(String)
+  nameWithType: PostManager.SetAccountName(String)
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetAccountName(System.String)
+  type: Method
+  source:
+    id: SetAccountName
+    path: ''
+    startLine: 37514
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nCall this function when you want to assign the name of the account or user\n"
+  example: []
+  syntax:
+    content: public void SetAccountName(string userAccountName)
+    parameters:
+    - id: userAccountName
+      type: System.String
+      description: 'Pass the name of the account or user '
+    content.vb: Public Sub SetAccountName(userAccountName As String)
+  overload: _Software_Engineer.Scripts.Home.PostManager.SetAccountName*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetViews(System.String)
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.SetViews(System.String)
+  id: SetViews(System.String)
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: SetViews(String)
+  nameWithType: PostManager.SetViews(String)
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetViews(System.String)
+  type: Method
+  source:
+    id: SetViews
+    path: ''
+    startLine: 37523
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nCall this function when you want to assign the view count of the post\n"
+  example: []
+  syntax:
+    content: public void SetViews(string viewsOfThePost)
+    parameters:
+    - id: viewsOfThePost
+      type: System.String
+      description: 'Pass the number of views in string '
+    content.vb: Public Sub SetViews(viewsOfThePost As String)
+  overload: _Software_Engineer.Scripts.Home.PostManager.SetViews*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetFirstComment(System.String)
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.SetFirstComment(System.String)
+  id: SetFirstComment(System.String)
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: SetFirstComment(String)
+  nameWithType: PostManager.SetFirstComment(String)
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetFirstComment(System.String)
+  type: Method
+  source:
+    id: SetFirstComment
+    path: ''
+    startLine: 37534
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nCall this function when you want to assign the first comment of the post\nThis will show only the first comment\nPlease, assign the 1st comment only\n"
+  example: []
+  syntax:
+    content: public void SetFirstComment(string commentOfThePost)
+    parameters:
+    - id: commentOfThePost
+      type: System.String
+      description: 'Pass the 1st comment '
+    content.vb: Public Sub SetFirstComment(commentOfThePost As String)
+  overload: _Software_Engineer.Scripts.Home.PostManager.SetFirstComment*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+  id: On_Click_ImageHolder
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ImageHolder()
+  nameWithType: PostManager.On_Click_ImageHolder()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder()
+  type: Method
+  source:
+    id: On_Click_ImageHolder
+    path: ''
+    startLine: 37544
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Image_Holder&quot; will be pressed twice.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ImageHolder()
+    content.vb: Public Sub On_Click_ImageHolder
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+  id: On_Click_AddToCollectionButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_AddToCollectionButton()
+  nameWithType: PostManager.On_Click_AddToCollectionButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton()
+  type: Method
+  source:
+    id: On_Click_AddToCollectionButton
+    path: ''
+    startLine: 37552
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_AddToCollection&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_AddToCollectionButton()
+    content.vb: Public Sub On_Click_AddToCollectionButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+  id: On_Click_ShareButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ShareButton()
+  nameWithType: PostManager.On_Click_ShareButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton()
+  type: Method
+  source:
+    id: On_Click_ShareButton
+    path: ''
+    startLine: 37560
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Share&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ShareButton()
+    content.vb: Public Sub On_Click_ShareButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+  id: On_Click_CommentButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_CommentButton()
+  nameWithType: PostManager.On_Click_CommentButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton()
+  type: Method
+  source:
+    id: On_Click_CommentButton
+    path: ''
+    startLine: 37568
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Comment&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_CommentButton()
+    content.vb: Public Sub On_Click_CommentButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+  id: On_Click_UnReactButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_UnReactButton()
+  nameWithType: PostManager.On_Click_UnReactButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton()
+  type: Method
+  source:
+    id: On_Click_UnReactButton
+    path: ''
+    startLine: 37576
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_UnReact&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_UnReactButton()
+    content.vb: Public Sub On_Click_UnReactButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+  id: On_Click_ReactButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ReactButton()
+  nameWithType: PostManager.On_Click_ReactButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton()
+  type: Method
+  source:
+    id: On_Click_ReactButton
+    path: ''
+    startLine: 37584
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_React&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ReactButton()
+    content.vb: Public Sub On_Click_ReactButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+  commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+  id: On_Click_EllipsisButton
+  parent: _Software_Engineer.Scripts.Home.PostManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_EllipsisButton()
+  nameWithType: PostManager.On_Click_EllipsisButton()
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton()
+  type: Method
+  source:
+    id: On_Click_EllipsisButton
+    path: ''
+    startLine: 37592
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Ellipsis&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_EllipsisButton()
+    content.vb: Public Sub On_Click_EllipsisButton
+  overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: _Software_Engineer.Scripts.Home
+  commentId: N:_Software_Engineer.Scripts.Home
+  name: _Software_Engineer.Scripts.Home
+  nameWithType: _Software_Engineer.Scripts.Home
+  fullName: _Software_Engineer.Scripts.Home
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetAccountName*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.SetAccountName
+  name: SetAccountName
+  nameWithType: PostManager.SetAccountName
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetAccountName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetViews*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.SetViews
+  name: SetViews
+  nameWithType: PostManager.SetViews
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetViews
+- uid: _Software_Engineer.Scripts.Home.PostManager.SetFirstComment*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.SetFirstComment
+  name: SetFirstComment
+  nameWithType: PostManager.SetFirstComment
+  fullName: _Software_Engineer.Scripts.Home.PostManager.SetFirstComment
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+  name: On_Click_ImageHolder
+  nameWithType: PostManager.On_Click_ImageHolder
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+  name: On_Click_AddToCollectionButton
+  nameWithType: PostManager.On_Click_AddToCollectionButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+  name: On_Click_ShareButton
+  nameWithType: PostManager.On_Click_ShareButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+  name: On_Click_CommentButton
+  nameWithType: PostManager.On_Click_CommentButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+  name: On_Click_UnReactButton
+  nameWithType: PostManager.On_Click_UnReactButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+  name: On_Click_ReactButton
+  nameWithType: PostManager.On_Click_ReactButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+- uid: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+  name: On_Click_EllipsisButton
+  nameWithType: PostManager.On_Click_EllipsisButton
+  fullName: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton

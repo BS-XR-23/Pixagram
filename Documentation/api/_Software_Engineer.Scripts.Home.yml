@@ -5,6 +5,7 @@ items:
   id: _Software_Engineer.Scripts.Home
   children:
   - _Software_Engineer.Scripts.Home.HomeManager
+  - _Software_Engineer.Scripts.Home.PostManager
   langs:
   - csharp
   - vb
@@ -20,3 +21,8 @@ references:
   name: HomeManager
   nameWithType: HomeManager
   fullName: _Software_Engineer.Scripts.Home.HomeManager
+- uid: _Software_Engineer.Scripts.Home.PostManager
+  commentId: T:_Software_Engineer.Scripts.Home.PostManager
+  name: PostManager
+  nameWithType: PostManager
+  fullName: _Software_Engineer.Scripts.Home.PostManager

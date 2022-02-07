@@ -1,0 +1,965 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: _Software_Engineer.Scripts.Home
+  commentId: N:_Software_Engineer.Scripts.Home
+  language: CSharp
+  name:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  nameWithType:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  qualifiedName:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: _Software_Engineer.Scripts.Home.HomeManager
+    commentId: T:_Software_Engineer.Scripts.Home.HomeManager
+    language: CSharp
+    name:
+      CSharp: HomeManager
+      VB: HomeManager
+    nameWithType:
+      CSharp: HomeManager
+      VB: HomeManager
+    qualifiedName:
+      CSharp: _Software_Engineer.Scripts.Home.HomeManager
+      VB: _Software_Engineer.Scripts.Home.HomeManager
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: _Software_Engineer.Scripts.Home
+    source:
+      id: HomeManager
+      path: ''
+      startLine: 37336
+    syntax:
+      content:
+        CSharp: 'public class HomeManager : MonoBehaviour'
+        VB: >-
+          Public Class HomeManager
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+      language: CSharp
+      name:
+        CSharp: On_Click_ProfileButton()
+        VB: On_Click_ProfileButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_ProfileButton()
+        VB: HomeManager.On_Click_ProfileButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ProfileButton
+        path: ''
+        startLine: 37363
+      summary: "\nThis function will be called when the &quot;Button_Profile&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ProfileButton()
+          VB: Public Sub On_Click_ProfileButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+      language: CSharp
+      name:
+        CSharp: On_Click_ShopButton()
+        VB: On_Click_ShopButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_ShopButton()
+        VB: HomeManager.On_Click_ShopButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ShopButton
+        path: ''
+        startLine: 37372
+      summary: "\nThis function will be called when the &quot;Button_Shop&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ShopButton()
+          VB: Public Sub On_Click_ShopButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+      language: CSharp
+      name:
+        CSharp: On_Click_NewPostButton()
+        VB: On_Click_NewPostButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_NewPostButton()
+        VB: HomeManager.On_Click_NewPostButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_NewPostButton
+        path: ''
+        startLine: 37381
+      summary: "\nThis function will be called when the &quot;Button_New post&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_NewPostButton()
+          VB: Public Sub On_Click_NewPostButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+      language: CSharp
+      name:
+        CSharp: On_Click_SearchButton()
+        VB: On_Click_SearchButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_SearchButton()
+        VB: HomeManager.On_Click_SearchButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_SearchButton
+        path: ''
+        startLine: 37391
+      summary: "\nThis function will be called when the &quot;Button_Search&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_SearchButton()
+          VB: Public Sub On_Click_SearchButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+      language: CSharp
+      name:
+        CSharp: On_Click_HomeButton()
+        VB: On_Click_HomeButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_HomeButton()
+        VB: HomeManager.On_Click_HomeButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_HomeButton
+        path: ''
+        startLine: 37400
+      summary: "\nThis function will be called when the &quot;Button_Home&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_HomeButton()
+          VB: Public Sub On_Click_HomeButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+      language: CSharp
+      name:
+        CSharp: On_Click_MessengerButton()
+        VB: On_Click_MessengerButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_MessengerButton()
+        VB: HomeManager.On_Click_MessengerButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_MessengerButton
+        path: ''
+        startLine: 37408
+      summary: "\nThis function will be called when the &quot;Button_Messenger&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_MessengerButton()
+          VB: Public Sub On_Click_MessengerButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+      commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+      language: CSharp
+      name:
+        CSharp: On_Click_ActivityButton()
+        VB: On_Click_ActivityButton()
+      nameWithType:
+        CSharp: HomeManager.On_Click_ActivityButton()
+        VB: HomeManager.On_Click_ActivityButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton()
+        VB: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ActivityButton
+        path: ''
+        startLine: 37416
+      summary: "\nThis function will be called when the &quot;Button_Activity&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ActivityButton()
+          VB: Public Sub On_Click_ActivityButton
+      overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: _Software_Engineer.Scripts.Home.PostManager
+    commentId: T:_Software_Engineer.Scripts.Home.PostManager
+    language: CSharp
+    name:
+      CSharp: PostManager
+      VB: PostManager
+    nameWithType:
+      CSharp: PostManager
+      VB: PostManager
+    qualifiedName:
+      CSharp: _Software_Engineer.Scripts.Home.PostManager
+      VB: _Software_Engineer.Scripts.Home.PostManager
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: _Software_Engineer.Scripts.Home
+    source:
+      id: PostManager
+      path: ''
+      startLine: 37485
+    syntax:
+      content:
+        CSharp: 'public class PostManager : MonoBehaviour'
+        VB: >-
+          Public Class PostManager
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: _Software_Engineer.Scripts.Home.PostManager.AccountName(System.String)
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.AccountName(System.String)
+      language: CSharp
+      name:
+        CSharp: AccountName(String)
+        VB: AccountName(String)
+      nameWithType:
+        CSharp: PostManager.AccountName(String)
+        VB: PostManager.AccountName(String)
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.AccountName(System.String)
+        VB: _Software_Engineer.Scripts.Home.PostManager.AccountName(System.String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: AccountName
+        path: ''
+        startLine: 37514
+      summary: "\nCall this function when you want to assign the name of the account or user\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void AccountName(string userAccountName)
+          VB: Public Sub AccountName(userAccountName As String)
+        parameters:
+        - id: userAccountName
+          type: System.String
+          description: 'Pass the name of the account or user '
+      overload: _Software_Engineer.Scripts.Home.PostManager.AccountName*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.Views(System.String)
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.Views(System.String)
+      language: CSharp
+      name:
+        CSharp: Views(String)
+        VB: Views(String)
+      nameWithType:
+        CSharp: PostManager.Views(String)
+        VB: PostManager.Views(String)
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.Views(System.String)
+        VB: _Software_Engineer.Scripts.Home.PostManager.Views(System.String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: Views
+        path: ''
+        startLine: 37523
+      summary: "\nCall this function when you want to assign the view count of the post\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Views(string viewsOfThePost)
+          VB: Public Sub Views(viewsOfThePost As String)
+        parameters:
+        - id: viewsOfThePost
+          type: System.String
+          description: 'Pass the number of views in string '
+      overload: _Software_Engineer.Scripts.Home.PostManager.Views*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.Comments(System.String)
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.Comments(System.String)
+      language: CSharp
+      name:
+        CSharp: Comments(String)
+        VB: Comments(String)
+      nameWithType:
+        CSharp: PostManager.Comments(String)
+        VB: PostManager.Comments(String)
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.Comments(System.String)
+        VB: _Software_Engineer.Scripts.Home.PostManager.Comments(System.String)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: Comments
+        path: ''
+        startLine: 37534
+      summary: "\nCall this function when you want to assign the first comment in the post\nThis will show only the first comment\nPlease, assign the 1st comment only\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void Comments(string commentOfThePost)
+          VB: Public Sub Comments(commentOfThePost As String)
+        parameters:
+        - id: commentOfThePost
+          type: System.String
+          description: 'Pass the 1st comment '
+      overload: _Software_Engineer.Scripts.Home.PostManager.Comments*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+      language: CSharp
+      name:
+        CSharp: On_Click_ImageHolder()
+        VB: On_Click_ImageHolder()
+      nameWithType:
+        CSharp: PostManager.On_Click_ImageHolder()
+        VB: PostManager.On_Click_ImageHolder()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ImageHolder
+        path: ''
+        startLine: 37544
+      summary: "\nThis function will be called when the &quot;Image_Holder&quot; will be pressed twice.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ImageHolder()
+          VB: Public Sub On_Click_ImageHolder
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+      language: CSharp
+      name:
+        CSharp: On_Click_AddToCollectionButton()
+        VB: On_Click_AddToCollectionButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_AddToCollectionButton()
+        VB: PostManager.On_Click_AddToCollectionButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_AddToCollectionButton
+        path: ''
+        startLine: 37552
+      summary: "\nThis function will be called when the &quot;Button_AddToCollection&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_AddToCollectionButton()
+          VB: Public Sub On_Click_AddToCollectionButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+      language: CSharp
+      name:
+        CSharp: On_Click_ShareButton()
+        VB: On_Click_ShareButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_ShareButton()
+        VB: PostManager.On_Click_ShareButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ShareButton
+        path: ''
+        startLine: 37560
+      summary: "\nThis function will be called when the &quot;Button_Share&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ShareButton()
+          VB: Public Sub On_Click_ShareButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+      language: CSharp
+      name:
+        CSharp: On_Click_CommentButton()
+        VB: On_Click_CommentButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_CommentButton()
+        VB: PostManager.On_Click_CommentButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_CommentButton
+        path: ''
+        startLine: 37568
+      summary: "\nThis function will be called when the &quot;Button_Comment&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_CommentButton()
+          VB: Public Sub On_Click_CommentButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+      language: CSharp
+      name:
+        CSharp: On_Click_UnReactButton()
+        VB: On_Click_UnReactButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_UnReactButton()
+        VB: PostManager.On_Click_UnReactButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_UnReactButton
+        path: ''
+        startLine: 37576
+      summary: "\nThis function will be called when the &quot;Button_UnReact&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_UnReactButton()
+          VB: Public Sub On_Click_UnReactButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+      language: CSharp
+      name:
+        CSharp: On_Click_ReactButton()
+        VB: On_Click_ReactButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_ReactButton()
+        VB: PostManager.On_Click_ReactButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_ReactButton
+        path: ''
+        startLine: 37584
+      summary: "\nThis function will be called when the &quot;Button_React&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_ReactButton()
+          VB: Public Sub On_Click_ReactButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+      commentId: M:_Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+      language: CSharp
+      name:
+        CSharp: On_Click_EllipsisButton()
+        VB: On_Click_EllipsisButton()
+      nameWithType:
+        CSharp: PostManager.On_Click_EllipsisButton()
+        VB: PostManager.On_Click_EllipsisButton()
+      qualifiedName:
+        CSharp: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton()
+        VB: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: _Software_Engineer.Scripts.Home
+      source:
+        id: On_Click_EllipsisButton
+        path: ''
+        startLine: 37592
+      summary: "\nThis function will be called when the &quot;Button_Ellipsis&quot; will be pressed.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public void On_Click_EllipsisButton()
+          VB: Public Sub On_Click_EllipsisButton
+      overload: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*
+        name: On_Click_ProfileButton
+        nameWithType: HomeManager.On_Click_ProfileButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*
+        name: On_Click_ProfileButton
+        nameWithType: HomeManager.On_Click_ProfileButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*
+        name: On_Click_ShopButton
+        nameWithType: HomeManager.On_Click_ShopButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*
+        name: On_Click_ShopButton
+        nameWithType: HomeManager.On_Click_ShopButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*
+        name: On_Click_NewPostButton
+        nameWithType: HomeManager.On_Click_NewPostButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*
+        name: On_Click_NewPostButton
+        nameWithType: HomeManager.On_Click_NewPostButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*
+        name: On_Click_SearchButton
+        nameWithType: HomeManager.On_Click_SearchButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*
+        name: On_Click_SearchButton
+        nameWithType: HomeManager.On_Click_SearchButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*
+        name: On_Click_HomeButton
+        nameWithType: HomeManager.On_Click_HomeButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*
+        name: On_Click_HomeButton
+        nameWithType: HomeManager.On_Click_HomeButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*
+        name: On_Click_MessengerButton
+        nameWithType: HomeManager.On_Click_MessengerButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*
+        name: On_Click_MessengerButton
+        nameWithType: HomeManager.On_Click_MessengerButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+  _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*
+        name: On_Click_ActivityButton
+        nameWithType: HomeManager.On_Click_ActivityButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*
+        name: On_Click_ActivityButton
+        nameWithType: HomeManager.On_Click_ActivityButton
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+  _Software_Engineer.Scripts.Home.HomeManager:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager
+        name: HomeManager
+        nameWithType: HomeManager
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager
+        name: HomeManager
+        nameWithType: HomeManager
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager
+    isDefinition: true
+    commentId: T:_Software_Engineer.Scripts.Home.HomeManager
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  _Software_Engineer.Scripts.Home.PostManager.AccountName*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.AccountName*
+        name: AccountName
+        nameWithType: PostManager.AccountName
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.AccountName
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.AccountName*
+        name: AccountName
+        nameWithType: PostManager.AccountName
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.AccountName
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.AccountName
+  _Software_Engineer.Scripts.Home.PostManager.Views*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.Views*
+        name: Views
+        nameWithType: PostManager.Views
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.Views
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.Views*
+        name: Views
+        nameWithType: PostManager.Views
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.Views
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.Views
+  _Software_Engineer.Scripts.Home.PostManager.Comments*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.Comments*
+        name: Comments
+        nameWithType: PostManager.Comments
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.Comments
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.Comments*
+        name: Comments
+        nameWithType: PostManager.Comments
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.Comments
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.Comments
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*
+        name: On_Click_ImageHolder
+        nameWithType: PostManager.On_Click_ImageHolder
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder*
+        name: On_Click_ImageHolder
+        nameWithType: PostManager.On_Click_ImageHolder
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*
+        name: On_Click_AddToCollectionButton
+        nameWithType: PostManager.On_Click_AddToCollectionButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton*
+        name: On_Click_AddToCollectionButton
+        nameWithType: PostManager.On_Click_AddToCollectionButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*
+        name: On_Click_ShareButton
+        nameWithType: PostManager.On_Click_ShareButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton*
+        name: On_Click_ShareButton
+        nameWithType: PostManager.On_Click_ShareButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*
+        name: On_Click_CommentButton
+        nameWithType: PostManager.On_Click_CommentButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton*
+        name: On_Click_CommentButton
+        nameWithType: PostManager.On_Click_CommentButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*
+        name: On_Click_UnReactButton
+        nameWithType: PostManager.On_Click_UnReactButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton*
+        name: On_Click_UnReactButton
+        nameWithType: PostManager.On_Click_UnReactButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*
+        name: On_Click_ReactButton
+        nameWithType: PostManager.On_Click_ReactButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton*
+        name: On_Click_ReactButton
+        nameWithType: PostManager.On_Click_ReactButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton
+  _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*
+        name: On_Click_EllipsisButton
+        nameWithType: PostManager.On_Click_EllipsisButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton*
+        name: On_Click_EllipsisButton
+        nameWithType: PostManager.On_Click_EllipsisButton
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+    isDefinition: true
+    commentId: Overload:_Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton
+  _Software_Engineer.Scripts.Home.PostManager:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.PostManager
+        name: PostManager
+        nameWithType: PostManager
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager
+      VB:
+      - id: _Software_Engineer.Scripts.Home.PostManager
+        name: PostManager
+        nameWithType: PostManager
+        qualifiedName: _Software_Engineer.Scripts.Home.PostManager
+    isDefinition: true
+    commentId: T:_Software_Engineer.Scripts.Home.PostManager
+  _Software_Engineer.Scripts.Home:
+    name:
+      CSharp:
+      - name: _Software_Engineer.Scripts.Home
+        nameWithType: _Software_Engineer.Scripts.Home
+        qualifiedName: _Software_Engineer.Scripts.Home
+      VB:
+      - name: _Software_Engineer.Scripts.Home
+        nameWithType: _Software_Engineer.Scripts.Home
+        qualifiedName: _Software_Engineer.Scripts.Home
+    isDefinition: true
+    commentId: N:_Software_Engineer.Scripts.Home

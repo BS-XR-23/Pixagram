@@ -57,7 +57,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Profile&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Profile&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_ProfileButton()
@@ -85,7 +85,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Shop&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Shop&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_ShopButton()
@@ -113,7 +113,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_New post&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_New post&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_NewPostButton()
@@ -141,7 +141,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Search&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Search&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_SearchButton()
@@ -169,7 +169,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Home&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Home&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_HomeButton()
@@ -197,7 +197,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Messenger&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Messenger&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_MessengerButton()
@@ -225,7 +225,7 @@ items:
   assemblies:
   - cs.temp.dll
   namespace: _Software_Engineer.Scripts.Home
-  summary: "\nThis function will call when the &quot;Button_Activity&quot; will be pressed.\n"
+  summary: "\nThis function will be called when the &quot;Button_Activity&quot; will be pressed.\n"
   example: []
   syntax:
     content: public void On_Click_ActivityButton()
