@@ -18,8 +18,10 @@ public class PostCell : MonoBehaviour, ICell
         _cellIndex = cellIndex;
 
         accountName.text = accountInfo.AccountName;
-        profilePicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
-        postPicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
+        postPicture.sprite = accountInfo.image;
+        profilePicture.sprite = accountInfo.image;
+        // profilePicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
+        // postPicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
 
     }
 }
