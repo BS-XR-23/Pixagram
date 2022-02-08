@@ -1,0 +1,10 @@
+apiRules:
+- include:
+    uidRegex: ^DocFxForUnity
+    type: Namespace
+- include:
+    uidRegex: ^_Software_Engineer.Scripts.Home
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace

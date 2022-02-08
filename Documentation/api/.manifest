@@ -1,0 +1,22 @@
+{
+  "_Software_Engineer.Scripts.Home": "_Software_Engineer.Scripts.Home.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton": "_Software_Engineer.Scripts.Home.HomeManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_AddToCollectionButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_CommentButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_EllipsisButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_ImageHolder": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_ReactButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_ShareButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.On_Click_UnReactButton": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.SetAccountName(System.String)": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.SetFirstComment(System.String)": "_Software_Engineer.Scripts.Home.PostManager.yml",
+  "_Software_Engineer.Scripts.Home.PostManager.SetViews(System.String)": "_Software_Engineer.Scripts.Home.PostManager.yml"
+}

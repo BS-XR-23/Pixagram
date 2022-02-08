@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: _Software_Engineer.Scripts.Home.HomeManager
+  commentId: T:_Software_Engineer.Scripts.Home.HomeManager
+  id: HomeManager
+  parent: _Software_Engineer.Scripts.Home
+  children:
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+  - _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+  langs:
+  - csharp
+  - vb
+  name: HomeManager
+  nameWithType: HomeManager
+  fullName: _Software_Engineer.Scripts.Home.HomeManager
+  type: Class
+  source:
+    id: HomeManager
+    path: ''
+    startLine: 37336
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  syntax:
+    content: 'public class HomeManager : MonoBehaviour'
+    content.vb: >-
+      Public Class HomeManager
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+  id: On_Click_ProfileButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ProfileButton()
+  nameWithType: HomeManager.On_Click_ProfileButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton()
+  type: Method
+  source:
+    id: On_Click_ProfileButton
+    path: ''
+    startLine: 37363
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Profile&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ProfileButton()
+    content.vb: Public Sub On_Click_ProfileButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+  id: On_Click_ShopButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ShopButton()
+  nameWithType: HomeManager.On_Click_ShopButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton()
+  type: Method
+  source:
+    id: On_Click_ShopButton
+    path: ''
+    startLine: 37372
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Shop&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ShopButton()
+    content.vb: Public Sub On_Click_ShopButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+  id: On_Click_NewPostButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_NewPostButton()
+  nameWithType: HomeManager.On_Click_NewPostButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton()
+  type: Method
+  source:
+    id: On_Click_NewPostButton
+    path: ''
+    startLine: 37381
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_New post&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_NewPostButton()
+    content.vb: Public Sub On_Click_NewPostButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+  id: On_Click_SearchButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_SearchButton()
+  nameWithType: HomeManager.On_Click_SearchButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton()
+  type: Method
+  source:
+    id: On_Click_SearchButton
+    path: ''
+    startLine: 37391
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Search&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_SearchButton()
+    content.vb: Public Sub On_Click_SearchButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+  id: On_Click_HomeButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_HomeButton()
+  nameWithType: HomeManager.On_Click_HomeButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton()
+  type: Method
+  source:
+    id: On_Click_HomeButton
+    path: ''
+    startLine: 37400
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Home&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_HomeButton()
+    content.vb: Public Sub On_Click_HomeButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+  id: On_Click_MessengerButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_MessengerButton()
+  nameWithType: HomeManager.On_Click_MessengerButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton()
+  type: Method
+  source:
+    id: On_Click_MessengerButton
+    path: ''
+    startLine: 37408
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Messenger&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_MessengerButton()
+    content.vb: Public Sub On_Click_MessengerButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+  commentId: M:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+  id: On_Click_ActivityButton
+  parent: _Software_Engineer.Scripts.Home.HomeManager
+  langs:
+  - csharp
+  - vb
+  name: On_Click_ActivityButton()
+  nameWithType: HomeManager.On_Click_ActivityButton()
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton()
+  type: Method
+  source:
+    id: On_Click_ActivityButton
+    path: ''
+    startLine: 37416
+  assemblies:
+  - cs.temp.dll
+  namespace: _Software_Engineer.Scripts.Home
+  summary: "\nThis function will be called when the &quot;Button_Activity&quot; will be pressed.\n"
+  example: []
+  syntax:
+    content: public void On_Click_ActivityButton()
+    content.vb: Public Sub On_Click_ActivityButton
+  overload: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: _Software_Engineer.Scripts.Home
+  commentId: N:_Software_Engineer.Scripts.Home
+  name: _Software_Engineer.Scripts.Home
+  nameWithType: _Software_Engineer.Scripts.Home
+  fullName: _Software_Engineer.Scripts.Home
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+  name: On_Click_ProfileButton
+  nameWithType: HomeManager.On_Click_ProfileButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ProfileButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+  name: On_Click_ShopButton
+  nameWithType: HomeManager.On_Click_ShopButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ShopButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+  name: On_Click_NewPostButton
+  nameWithType: HomeManager.On_Click_NewPostButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_NewPostButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+  name: On_Click_SearchButton
+  nameWithType: HomeManager.On_Click_SearchButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_SearchButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+  name: On_Click_HomeButton
+  nameWithType: HomeManager.On_Click_HomeButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_HomeButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+  name: On_Click_MessengerButton
+  nameWithType: HomeManager.On_Click_MessengerButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_MessengerButton
+- uid: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton*
+  commentId: Overload:_Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton
+  name: On_Click_ActivityButton
+  nameWithType: HomeManager.On_Click_ActivityButton
+  fullName: _Software_Engineer.Scripts.Home.HomeManager.On_Click_ActivityButton

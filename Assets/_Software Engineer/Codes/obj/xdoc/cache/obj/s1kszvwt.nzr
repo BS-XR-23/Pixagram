@@ -1,0 +1,90 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: _Software_Engineer.Scripts.Home
+  commentId: N:_Software_Engineer.Scripts.Home
+  language: CSharp
+  name:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  nameWithType:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  qualifiedName:
+    CSharp: _Software_Engineer.Scripts.Home
+    VB: _Software_Engineer.Scripts.Home
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: _Software_Engineer.Scripts.Home.HomeManager
+    commentId: T:_Software_Engineer.Scripts.Home.HomeManager
+    language: CSharp
+    name:
+      CSharp: HomeManager
+      VB: HomeManager
+    nameWithType:
+      CSharp: HomeManager
+      VB: HomeManager
+    qualifiedName:
+      CSharp: _Software_Engineer.Scripts.Home.HomeManager
+      VB: _Software_Engineer.Scripts.Home.HomeManager
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: _Software_Engineer.Scripts.Home
+    source:
+      id: HomeManager
+      path: ''
+      startLine: 37336
+    syntax:
+      content:
+        CSharp: 'public class HomeManager : MonoBehaviour'
+        VB: >-
+          Public Class HomeManager
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+references:
+  _Software_Engineer.Scripts.Home.HomeManager:
+    name:
+      CSharp:
+      - id: _Software_Engineer.Scripts.Home.HomeManager
+        name: HomeManager
+        nameWithType: HomeManager
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager
+      VB:
+      - id: _Software_Engineer.Scripts.Home.HomeManager
+        name: HomeManager
+        nameWithType: HomeManager
+        qualifiedName: _Software_Engineer.Scripts.Home.HomeManager
+    isDefinition: true
+    commentId: T:_Software_Engineer.Scripts.Home.HomeManager
+  _Software_Engineer.Scripts.Home:
+    name:
+      CSharp:
+      - name: _Software_Engineer.Scripts.Home
+        nameWithType: _Software_Engineer.Scripts.Home
+        qualifiedName: _Software_Engineer.Scripts.Home
+      VB:
+      - name: _Software_Engineer.Scripts.Home
+        nameWithType: _Software_Engineer.Scripts.Home
+        qualifiedName: _Software_Engineer.Scripts.Home
+    isDefinition: true
+    commentId: N:_Software_Engineer.Scripts.Home
