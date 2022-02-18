@@ -20,8 +20,11 @@ public class PostCell : MonoBehaviour, ICell
         accountName.text = accountInfo.AccountName;
         postPicture.sprite = accountInfo.image;
         profilePicture.sprite = accountInfo.image;
-        // profilePicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
-        // postPicture.color = new Color32((byte)accountInfo.ColorR, (byte)accountInfo.ColorG, (byte)accountInfo.ColorB, (byte)accountInfo.ColorA);
+        Texture texture = accountInfo.image.texture;
+        print($"1.width:{texture.width},height:{texture.height}");
+        float aspectRatio = texture.width /(float) texture.height;
+        postPicture.GetComponent<AspectRatioFitter>().aspectRatio = aspectRatio;
+
 
     }
 }

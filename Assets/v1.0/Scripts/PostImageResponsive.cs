@@ -8,23 +8,15 @@ public class PostImageResponsive : MonoBehaviour
 {
     public Sprite image;
     public float aspectRatio;
+    public Texture Texture;
     
     private void Awake()
     {
-
-        //Debug.Log(image.rect.height);
-        //Debug.Log(image.bounds.size.y);
-        //aspectRatio = image.bounds.size.x / image.bounds.size.y;
-        //gameObject.GetComponent<AspectRatioFitter>().aspectRatio = aspectRatio;
-        //gameObject.GetComponent<Image>().sprite = image;
+        Image image = GetComponent<Image>();
+        Texture texture = image.sprite.texture;
     }
     private void Start()
     {
-        Image image = GetComponent<Image>();
-        Texture texture = image.mainTexture;
-        aspectRatio = texture.width / texture.height;
-        //gameObject.GetComponent<AspectRatioFitter>().aspectRatio = aspectRatio;
-        //gameObject.GetComponent<Image>().sprite = image;
-        print($"width:{texture.width},height:{texture.height} aspect:{aspectRatio}");
+      
     }
 }
