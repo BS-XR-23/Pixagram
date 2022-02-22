@@ -8,6 +8,8 @@ public class ImportNFTTextureExample : MonoBehaviour
 {
     public class Response {
         public string image;
+        public string name;
+        public string description;
     }
 
     async void Start()

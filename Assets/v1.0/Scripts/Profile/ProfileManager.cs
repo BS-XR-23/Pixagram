@@ -41,6 +41,18 @@ public class ProfileManager : MonoBehaviour
     [SerializeField] private GameObject createSlide;
     [SerializeField] private GameObject wallet;
 
+    [Space(5)]
+    [Header("Transforms")]
+    [SerializeField] private Transform nFTParent;
+
+    [Space(5)]
+    [Header("Prefabs")]
+    [SerializeField] private NFTData nFTData;
+
+    [Space(5)]
+    [Header("List")]
+    [SerializeField] private List<NFTData> nFTDatas=new List<NFTData>();
+
     private void Start()
     {
         UnityEngine.Assertions.Assert.IsNotNull(newButton);
@@ -113,8 +125,8 @@ public class ProfileManager : MonoBehaviour
             accountId.text = $"Acc Id: {PlayerPrefs.GetString("Account")}";
             removeWallet.gameObject.SetActive(true);
             wallet.SetActive(true);
-            GetAllERC1155Token();
-            GetAllERC721Token();
+            GetAllNFTs(721);
+            GetAllNFTs(1155);
             string balance = await GetBalanceAsync();
             balanceText.text = $"Balance: {WEI_TO_ETH(balance)} ETH";
             
@@ -185,6 +197,60 @@ public class ProfileManager : MonoBehaviour
         print(Convert.ToDecimal(eth).ToString());
         return wei;
     }
+    async void GetAllNFTs(int standard)
+    {
+        string chain = "ethereum";
+        string network = "rinkeby";//mainnet ropsten kovan rinkeby goerli
+        string account = PlayerPrefs.GetString("Account");//"0xebc0e6232fb9d494060acf580105108444f7c696";
+        string contract = "";
+        string response = standard==1155?await EVM.AllErc1155(chain, network, account, contract):await EVM.AllErc721(chain, network, account, contract);
+        try
+        {
+
+            NFTs[] erc1155s = JsonConvert.DeserializeObject<NFTs[]>(response);
+            //print($"Number Of Token:{erc1155s.Length}");
+            foreach (NFTs nFTs in erc1155s)
+            {
+                print($"Contract:{nFTs.contract}||tokenId:{nFTs.tokenId}||Uri:{nFTs.uri}||Balance:{nFTs.balance}");
+                if (nFTs.uri!=null&&(nFTs.uri.StartsWith("http://") || nFTs.uri.StartsWith("https://")))
+                {
+                    
+                    UnityWebRequest webRequest = UnityWebRequest.Get(nFTs.uri);
+                    await webRequest.SendWebRequest();
+                    print("responseCode:" + webRequest.responseCode);
+                    if (webRequest.result==UnityWebRequest.Result.Success)
+                    {
+                        var downloadData = webRequest.downloadHandler.data;
+                        print("downloadData: " + System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+                        Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+
+                        string imageUri = data.image;
+                        NFTData nft = Instantiate(nFTData, nFTParent);
+                        nft.Init(data.name, data.image);
+                        nFTDatas.Add(nft);
+                        print("imageUri: " + imageUri);
+
+                    }
+                    else
+                    {
+
+                    }
+                    
+                }
+                else
+                {
+                    print("uri: " + nFTs.uri);
+                }
+
+
+            }
+
+        }
+        catch
+        {
+            print("Error: " + response);
+        }
+    }
     async void GetAllERC1155Token()
     {
         string chain = "ethereum";
@@ -199,19 +265,26 @@ public class ProfileManager : MonoBehaviour
             print($"Number Of Token:{erc1155s.Length}");
             foreach (NFTs nFTs in erc1155s)
             {
-                print($"Contract:{nFTs.contract}||tokenId:{nFTs.tokenId}||Uri:{nFTs.uri}||Balance:{nFTs.balance}");
+                if (nFTs.uri.StartsWith("http://") || nFTs.uri.StartsWith("https://"))
+                {
+
+                  
+                    print($"Contract:{nFTs.contract}||tokenId:{nFTs.tokenId}||Uri:{nFTs.uri}||Balance:{nFTs.balance}");
+
+                    UnityWebRequest webRequest = UnityWebRequest.Get(nFTs.uri);
+                    await webRequest.SendWebRequest();
+                    var downloadData = webRequest.downloadHandler.data;
+                    print("downloadData: " + System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+                    Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
+
+                    string imageUri = data.image;
+                    NFTData nft = Instantiate(nFTData, nFTParent);
+                    nft.Init(data.name,data.image);
+                    nFTDatas.Add(nft);
+                    print("imageUri: " + imageUri);
+                }
 
 
-                //UnityWebRequest webRequest = UnityWebRequest.Get(nFTs.uri);
-                //await webRequest.SendWebRequest();
-                //var downloadData = webRequest.downloadHandler.data;
-                //print("downloadData: " + downloadData.ToString());
-                //Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
-
-                //print("imageUri: " + data.ToString());
-                //// parse json to get image uri
-                //string imageUri = data.image;
-                //print("imageUri: " + imageUri);
             }
 
         }
