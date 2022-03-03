@@ -13,7 +13,7 @@ public class PostImageResponsive : MonoBehaviour
     private void Awake()
     {
         Image image = GetComponent<Image>();
-        Texture texture = image.sprite.texture;
+        //Texture texture = image.sprite.texture;
     }
     private void Start()
     {

@@ -641,6 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: e1e958f9178cae04e99f7f02aa70546e, type: 3}
   aspectRatio: 0
+  Texture: {fileID: 0}
 --- !u!114 &7338304952807075187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,6 +1075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accountName: {fileID: 101804871517508208}
+  profilePicture: {fileID: 0}
+  postPicture: {fileID: 0}
 --- !u!1 &101804871808907169
 GameObject:
   m_ObjectHideFlags: 0

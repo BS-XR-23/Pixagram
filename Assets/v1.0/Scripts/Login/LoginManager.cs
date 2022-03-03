@@ -24,7 +24,7 @@ public class LoginManager : MonoBehaviour
 
     [SerializeField] private GameObject loginScene;
     [SerializeField] private GameObject homeScene;
-
+    [SerializeField] private GameObject walletScene;
 
     private void Start()
     {
@@ -41,7 +41,15 @@ public class LoginManager : MonoBehaviour
     
     void On_Click_LoginButton()
     {
-        ActiveHomeScene();
+        string accId = PlayerPrefs.GetString("Account");
+        if (accId != null && accId.Length > 0)
+        {
+            ActiveHomeScene();
+        }
+        else
+        {
+            ActiveWalletScene();
+        }
         InactiveLogInScene();
     }
     
@@ -64,6 +72,10 @@ public class LoginManager : MonoBehaviour
     void ActiveHomeScene()
     {
         homeScene.SetActive(true);
+    }
+    void ActiveWalletScene()
+    {
+        walletScene.SetActive(true);
     }
 
     void InactiveLogInScene()

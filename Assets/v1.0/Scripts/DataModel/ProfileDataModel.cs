@@ -51,6 +51,7 @@ public class CommentInfo
 public class User
 {
     public string UserID;
+    public string Token;
     public string UserName;
     public string ProfileImageURL;
 }
