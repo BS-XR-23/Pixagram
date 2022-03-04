@@ -110,7 +110,8 @@ namespace _Software_Engineer.Scripts.Home
             shopButton.onClick.AddListener(On_Click_ShopButton);
             profileButton.onClick.AddListener(On_Click_ProfileButton);
         }
-    
+
+       
         private void ActiveProfileScene()
         {
             profileScene.SetActive(true);

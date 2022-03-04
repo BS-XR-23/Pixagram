@@ -11,8 +11,24 @@ public class PostController : SerializedMonoBehaviour
     public int numberOfItem = 10;
     public List<Sprite> sprites;
     private string userId;
+
+    [Space(2)]
+    [Header("FullScreenModel")]
     [SerializeField]
-    public Dictionary<string, Product2> models;
+    private GameObject fullscreenPanel;
+    [SerializeField]
+    private GameObject modelTarget;
+
+    [Space(2)]
+    [Header("DragController")]
+    [SerializeField]
+    DraggingController _draggingController;
+    [SerializeField]
+    Transform _defaultModel;
+    private Vector3 defaultPosition;
+
+    [SerializeField]
+    public Dictionary<string, Product2> models = new Dictionary<string, Product2>();
     void Start()
     {
         for(int i=0;i<numberOfItem;i++)
@@ -24,36 +40,76 @@ public class PostController : SerializedMonoBehaviour
 
             postCell.ConfigureCell(obj, i);
         }
+        _defaultModel.gameObject.SetActive(false);
+        defaultPosition = _defaultModel.position;
         userId = Constant.ownerId;
+        print($"Models:{models.Count}");
+
         _ = OpenSeaAssetsAsync();
 
+    }
+    private void FullScreen(Product2 product)
+    {
+        fullscreenPanel.SetActive(true);
+
+        _defaultModel.gameObject.SetActive(false);
+        Transform model = models[product.product_name].styleObject;
+        model.position = modelTarget.transform.position;
+        model.rotation = modelTarget.transform.rotation;
+
+        GameObject obj = Instantiate(product.styleObject.gameObject, modelTarget.transform);
+        Rigidbody rb = obj.AddComponent<Rigidbody>();
+        rb.angularDrag = _defaultModel.GetComponent<Rigidbody>().angularDrag;
+        rb.useGravity = _defaultModel.GetComponent<Rigidbody>().useGravity;
+        obj.AddComponent<BoxCollider>().isTrigger = true;
+        obj.name = product.product_name;
+        if (product.category == "outfit")
+        {
+            print("outfit");
+            obj.transform.localScale = _defaultModel.localScale + new Vector3(250, 250,250);
+            obj.transform.position = defaultPosition + new Vector3(0, -2.5f, 0);
+        }
+        else
+        {
+            obj.transform.localScale = _defaultModel.localScale - new Vector3(50, 50, 50);
+            obj.transform.position = _defaultModel.position;
+        }
+        obj.transform.rotation = _defaultModel.rotation;
+        _draggingController.target = obj.transform;
+        _draggingController._zoomTarget = modelTarget.transform;
+    }
+    public void Close()
+    {
+        DestroyImmediate(_draggingController.target.gameObject);
     }
 
     private async Task OpenSeaAssetsAsync()
     {
-        string url = APIEndPoints.assets + $"?owner={userId}&order_direction=asc&offset=0&limit=40";
+        string url = $"{APIEndPoints.assets }?owner={userId}&order_direction=asc&offset=0&limit=40";
         print(url);
         Asset openSeaAssetDatas = await APIRequestFactory.Instance.Get<Asset>(url, false, "");
         OpenSeaAssetData[] assets = openSeaAssetDatas.assets;
+        print($"Length:{openSeaAssetDatas.assets.Length}");
         foreach (OpenSeaAssetData openSeaAssetData in assets)
         {
-
-            print($"price:{openSeaAssetData.sell_orders[0].base_price/Mathf.Pow(10,18)}");
+           
             Product obj = Instantiate(product, parent);
             obj.name = openSeaAssetData.name;
             obj.transform.SetSiblingIndex(Random.Range(0, parent.childCount));
-            Product2 model = null;
-            if(models.ContainsKey(openSeaAssetData.name))
+            
+            Product2 model = models.ContainsKey(openSeaAssetData.name)? models[openSeaAssetData.name]:null;
+            obj.fullscreen.onClick.AddListener(() =>
             {
-                model= models[openSeaAssetData.name];
-            }
-            else
-            {
-                
-            }
+                if (model != null)
+                {
+                    model.product_name = openSeaAssetData.name;
+                    FullScreen(model);
+                }
+            });
+           
             obj.Init(openSeaAssetData.name, WEI_TO_ETH(openSeaAssetData.sell_orders[0].base_price), openSeaAssetData.description, openSeaAssetData.permalink, model, openSeaAssetData.image_url);
         }
-        print(openSeaAssetDatas.assets.Length);
+       
     }
     private string WEI_TO_ETH(double balance)
     {
@@ -63,7 +119,7 @@ public class PostController : SerializedMonoBehaviour
     }
     private void OnDestroy()
     {
-        parent.DestoryAllChild();
+        parent.DestoryAllChildImmediate();
     }
 }
 

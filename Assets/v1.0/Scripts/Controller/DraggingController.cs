@@ -37,6 +37,9 @@ public class DraggingController : MonoBehaviour,IDragHandler, IBeginDragHandler,
     private float minZoom = -10;
     [SerializeField]
     private float zoom = 0;
+    [SerializeField]
+    private float zoomMultiplier = 1;
+    private float zoomDistance = 0;
 
 
     [Space(2)]
@@ -52,10 +55,11 @@ public class DraggingController : MonoBehaviour,IDragHandler, IBeginDragHandler,
     private float _dragX = 0;
     private float _dragY = 0;
     [SerializeField]
-    private float _dragFactor = 40f;
+    private float _dragFactor = .5f;
     [SerializeField]
     private bool _useTorque = false;
     private Vector3 initialScale = Vector3.one;
+    private Camera cam;
 
     private void Awake()
     {
@@ -66,27 +70,67 @@ public class DraggingController : MonoBehaviour,IDragHandler, IBeginDragHandler,
             rb = target.GetComponent<Rigidbody>();
         }
         initialScale = _zoomTarget.localScale;
+        cam = Camera.main;
         
     }
     private void Update()
     {
         if(hover&& enableZoom)
         {
-            zoom += Input.GetAxis("Mouse ScrollWheel");
-            if(zoom <= minZoom)
-            {
-                zoom = minZoom;
-            }
-            else if(zoom >= maxZoom)
-            {
-                zoom = maxZoom;
-            }
-            if (Input.GetAxis("Mouse ScrollWheel")!=0)
-            {
-                _zoomTarget.localScale = initialScale + Vector3.one * zoom;
-            }
+
+            ZoomController();
         }
        
+    }
+
+    private void ZoomController()
+    {
+        if (Application.isEditor)
+        {
+            zoom += Input.GetAxis("Mouse ScrollWheel");
+        }
+        else
+        {
+            if (Input.touchCount >= 2)
+            {
+                Vector2 touch0, touch1;
+                touch0 = cam.ScreenToWorldPoint( Input.GetTouch(0).position);
+                touch1 = cam.ScreenToWorldPoint(Input.GetTouch(1).position);
+                float distance = Vector2.Distance(touch0, touch1) * .05f;
+                if(distance<zoomDistance)
+                {
+                    zoom -= distance;
+                }
+                else
+                {
+                    zoom += distance;
+                    
+                }
+                zoomDistance = distance;
+
+                print($"Distance:{zoomDistance} Zoom:{zoom}");
+            }
+        }
+
+        if (zoom <= minZoom)
+        {
+            zoom = minZoom;
+        }
+        else if (zoom >= maxZoom)
+        {
+            zoom = maxZoom;
+        }
+        if (Application.isEditor)
+        {
+            if (Input.GetAxis("Mouse ScrollWheel") != 0)
+            {
+                _zoomTarget.localScale = initialScale + Vector3.one * zoom * zoomMultiplier;
+            }
+        }
+        else if(Input.touchCount >= 2)
+        {
+            _zoomTarget.localScale = initialScale + Vector3.one * zoom * zoomMultiplier;
+        }
     }
     private void OnEnable()
     {
@@ -101,45 +145,42 @@ public class DraggingController : MonoBehaviour,IDragHandler, IBeginDragHandler,
     public void OnDrag(PointerEventData eventData)
     {
        
-        if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
-            print(eventData.pointerDrag.name);
+        if (Application.isEditor&&!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
+            print($"DragX:{ eventData.delta.x},DragY:{eventData.delta.y}");
             return;
         }
+        print($"DragX2:{ eventData.delta.x},DragY2:{eventData.delta.y}");
         if (target == null) return;
-        _dragX += Input.GetAxis("Mouse X") * _dragFactor* (inverseXRotation?-1:1);
-        _dragY += Input.GetAxis("Mouse Y") * _dragFactor* (inverseYRotation ?-1:1);
-       
+        _dragX += eventData.delta.x * _dragFactor* (inverseXRotation?-1:1);
+        _dragY += eventData.delta.y * _dragFactor * (inverseYRotation ?-1:1);
+        
         if (_useTorque)
         {
-            print($"DragValue:{_dragX}");
             rb.AddTorque(new Vector3(_dragY != 0 && !lockXRotation ? _dragY : 0, _dragX != 0 && !lockYRotation ?_dragX : 0, 0));
         }
         else
         {
-            //Vector3 rotation = GetRotation(target);
-            //print($"Quater:{Quaternion.Euler(target.eulerAngles)}");
-            print($"Euler:{target.transform.localEulerAngles}");
-            //print($"Rotation:{target.rotation}");
             if (Mathf.Abs(_dragY)> Mathf.Abs(_dragX))
             {
                 
                 target.Rotate(new Vector3(_dragY != 0 && !lockXRotation ? _dragY : 0, 0, 0), Space.Self);
                 float x = Mathf.Clamp(target.eulerAngles.x, 0, maxRotationX);
-
-              
                // target.eulerAngles=new Vector3(x , target.eulerAngles.y, target.eulerAngles.z);
             }
             else
             {
                 target.Rotate(new Vector3(0, _dragX != 0 && !lockYRotation ? _dragX : 0, 0), Space.World);
             }
-           
             // target.DORotate(new Vector3(_dragY != 0 ? _dragY : 0, _dragX != 0 ? -_dragX : 0, 0),.1f,RotateMode.Fast);
         }
        
         _dragX = 0;
         _dragY = 0;
 
+    }
+    private void touchZoom()
+    {
+        
     }
 
     private Vector3 GetRotation(Transform transform)

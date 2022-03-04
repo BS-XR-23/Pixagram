@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class Product : MonoBehaviour
 {
-    [SerializeField]
-    private DraggingController _draggingController;
+   
     [SerializeField]
     private TextMeshProUGUI _productName;
     [SerializeField]
@@ -21,8 +20,9 @@ public class Product : MonoBehaviour
     private Button _buyNow;
     [SerializeField]
     private Transform _modelParent;
+    public Button fullscreen;
     [SerializeField]
-    private Transform defaultModel;
+    public GameObject fullscreenIcon;
 
     private string _permalink;
     void Start()
@@ -36,39 +36,13 @@ public class Product : MonoBehaviour
         _description.text = description;
         _permalink = permalink;
         _buyNow.onClick.AddListener(BuyNow);
-        
-        if (product == null) {
-           
-            _draggingController.enabled = false;
-            LoadTexture(texureURL);
-        }
-        else
-        {
-            _rawImage.enabled = false;
-            GameObject obj = Instantiate(product.styleObject.gameObject, _modelParent);
+        LoadTexture(texureURL);
 
-            Rigidbody rb = obj.AddComponent<Rigidbody>();
-            rb.angularDrag = defaultModel.GetComponent<Rigidbody>().angularDrag;
-            rb.useGravity = defaultModel.GetComponent<Rigidbody>().useGravity;
-            obj.AddComponent<BoxCollider>().isTrigger=true;
-            obj.name = name;
-            if (product.category=="outfit")
-            {
-                obj.transform.localScale = defaultModel.localScale +new Vector3(40000,40000,40000);
-                obj.transform.position = defaultModel.position-new Vector3(0,1.8f,0);
-            }
-            else
-            {
-                obj.transform.localScale = defaultModel.localScale;
-                obj.transform.position = defaultModel.position;
-            }
-            
-            print($"name:{name}");
-            obj.transform.rotation = defaultModel.rotation;
-            
-            _draggingController.target = obj.transform;
-            _draggingController._zoomTarget = obj.transform;
+        if (product == null) {
+
+            fullscreenIcon.SetActive(false);
         }
+       
     }
     private async void LoadTexture(string texureURL)
     {
@@ -77,7 +51,8 @@ public class Product : MonoBehaviour
         if(_rawImage!=null)
         {
             _rawImage.texture = ((DownloadHandlerTexture)textureRequest.downloadHandler).texture;
-            GetComponentInChildren<AspectRatioFitter>().aspectRatio = _rawImage.texture.width / (float)_rawImage.texture.height;
+            print($"ratio:{_rawImage.GetComponent<AspectRatioFitter>().aspectRatio} tex:{_rawImage.texture.width}");
+            _rawImage.GetComponent<AspectRatioFitter>().aspectRatio = _rawImage.texture.width / (float)_rawImage.texture.height;
             _rawImage.enabled = true;
             
         }

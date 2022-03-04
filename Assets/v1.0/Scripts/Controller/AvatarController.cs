@@ -39,6 +39,10 @@ public class AvatarController : MonoBehaviour
     [SerializeField]
     private StyleItem stylePrefab;
 
+    
+
+
+
     [SerializeField]
     private TextMeshProUGUI emptyItem;
 
@@ -55,10 +59,15 @@ public class AvatarController : MonoBehaviour
         }
         else
         {
-            emptyItem.text = "No NFT.Please Add Your Wallet First";
+            emptyItem.text = "No NFT.\nPlease Add Your Wallet First";
             emptyItem.gameObject.SetActive(true);
         }
        
+    }
+    
+    private void OnDestroy()
+    {
+       if(stylePrefabParent!=null) stylePrefabParent.DestoryAllChildImmediate();
     }
 
     public void ChangeSunglass(Transform sunglass,bool visibility,Product2 product)
@@ -192,5 +201,4 @@ public class Product2
     public string permalink;
     public string category;
     public Transform styleObject;
-    public Vector3 scale;
 }
