@@ -26,6 +26,7 @@ public class PostController : SerializedMonoBehaviour
     [SerializeField]
     Transform _defaultModel;
     private Vector3 defaultPosition;
+    private Vector3 defaultScale;
 
     [SerializeField]
     public Dictionary<string, Product2> models = new Dictionary<string, Product2>();
@@ -42,6 +43,7 @@ public class PostController : SerializedMonoBehaviour
         }
         _defaultModel.gameObject.SetActive(false);
         defaultPosition = _defaultModel.position;
+        defaultScale= modelTarget.transform.localScale;
         userId = Constant.ownerId;
         print($"Models:{models.Count}");
 
@@ -51,29 +53,26 @@ public class PostController : SerializedMonoBehaviour
     private void FullScreen(Product2 product)
     {
         fullscreenPanel.SetActive(true);
-
         _defaultModel.gameObject.SetActive(false);
-        Transform model = models[product.product_name].styleObject;
-        model.position = modelTarget.transform.position;
-        model.rotation = modelTarget.transform.rotation;
-
         GameObject obj = Instantiate(product.styleObject.gameObject, modelTarget.transform);
         Rigidbody rb = obj.AddComponent<Rigidbody>();
         rb.angularDrag = _defaultModel.GetComponent<Rigidbody>().angularDrag;
         rb.useGravity = _defaultModel.GetComponent<Rigidbody>().useGravity;
         obj.AddComponent<BoxCollider>().isTrigger = true;
         obj.name = product.product_name;
+        modelTarget.transform.localScale = defaultScale;
         if (product.category == "outfit")
         {
             print("outfit");
             obj.transform.localScale = _defaultModel.localScale + new Vector3(250, 250,250);
-            obj.transform.position = defaultPosition + new Vector3(0, -2.5f, 0);
+            obj.transform.position = defaultPosition + new Vector3(0, -2.7f, 0);
         }
         else
         {
-            obj.transform.localScale = _defaultModel.localScale - new Vector3(50, 50, 50);
+            obj.transform.localScale = _defaultModel.localScale - new Vector3(20, 20, 20);
             obj.transform.position = _defaultModel.position;
         }
+        
         obj.transform.rotation = _defaultModel.rotation;
         _draggingController.target = obj.transform;
         _draggingController._zoomTarget = modelTarget.transform;

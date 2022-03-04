@@ -96,7 +96,7 @@ public class DraggingController : MonoBehaviour,IDragHandler, IBeginDragHandler,
                 Vector2 touch0, touch1;
                 touch0 = cam.ScreenToWorldPoint( Input.GetTouch(0).position);
                 touch1 = cam.ScreenToWorldPoint(Input.GetTouch(1).position);
-                float distance = Vector2.Distance(touch0, touch1) * .05f;
+                float distance = Vector2.Distance(touch0, touch1) * .03f;
                 if(distance<zoomDistance)
                 {
                     zoom -= distance;
