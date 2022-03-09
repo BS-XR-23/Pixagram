@@ -109,6 +109,8 @@ namespace _Software_Engineer.Scripts.Home
             newPostButton.onClick.AddListener(On_Click_NewPostButton);
             shopButton.onClick.AddListener(On_Click_ShopButton);
             profileButton.onClick.AddListener(On_Click_ProfileButton);
+
+            
         }
 
        

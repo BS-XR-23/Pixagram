@@ -91,7 +91,7 @@ public class PostController : SerializedMonoBehaviour
         print($"Length:{openSeaAssetDatas.assets.Length}");
         foreach (OpenSeaAssetData openSeaAssetData in assets)
         {
-           
+            if (gameObject==null) return;
             Product obj = Instantiate(product, parent);
             obj.name = openSeaAssetData.name;
             obj.transform.SetSiblingIndex(Random.Range(0, parent.childCount));
@@ -118,7 +118,8 @@ public class PostController : SerializedMonoBehaviour
     }
     private void OnDestroy()
     {
-        parent.DestoryAllChildImmediate();
+       
+        parent.DestoryAllChild();
     }
 }
 

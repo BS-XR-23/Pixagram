@@ -22,6 +22,7 @@ public class ProfileManager : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Button profileButton;
     [SerializeField] private UnityEngine.UI.Button removeWallet;
     [SerializeField] private UnityEngine.UI.Button addWallet;
+    [SerializeField] private UnityEngine.UI.Button logout;
 
     [Header("TextMesh")]
     [Space(5)]
@@ -33,6 +34,7 @@ public class ProfileManager : MonoBehaviour
     [Header("Game Objects")]
     [Space(5)]
 
+    [SerializeField] private GameObject loginScene;
     [SerializeField] private GameObject homeScene;
     [SerializeField] private GameObject searchScene;
     [SerializeField] private GameObject createPostScene;
@@ -71,6 +73,14 @@ public class ProfileManager : MonoBehaviour
         newPostButton.onClick.AddListener(On_Click_NewPostButton);
         shopButton.onClick.AddListener(On_Click_ShopButton);
         profileButton.onClick.AddListener(On_Click_ProfileButton);
+        logout.onClick.AddListener(() =>
+        {
+            PlayerPrefs.SetInt("logged_in",0);
+            PlayerPrefs.SetString("Account","");
+            homeScene.SetActive(false);
+            profileScene.SetActive(false);
+            loginScene.SetActive(true);
+        });
         _ = LoadWalletAsync();
     }
     private void OnDestroy()
@@ -215,6 +225,7 @@ public class ProfileManager : MonoBehaviour
         foreach (OpenSeaAssetData openSeaAssetData in assets)
         {
             print($"price:{openSeaAssetData.name}");
+            if (gameObject == null) return;
             NFTData nft = Instantiate(nFTData, nFTParent);
             nft.Init(openSeaAssetData.name, openSeaAssetData.image_url);
 
@@ -250,6 +261,7 @@ public class ProfileManager : MonoBehaviour
                         Response data = JsonUtility.FromJson<Response>(System.Text.Encoding.UTF8.GetString(webRequest.downloadHandler.data));
 
                         string imageUri = data.image;
+                        
                         NFTData nft = Instantiate(nFTData, nFTParent);
                         nft.Init(data.name, data.image);
                         nFTDatas.Add(nft);

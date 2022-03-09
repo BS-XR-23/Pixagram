@@ -124,6 +124,7 @@ public class AvatarController : MonoBehaviour
         for(int i=0;i<products.Length;i++)
         {
             Product2 product = products[i];
+            if (gameObject == null) return;
             StyleItem styleItem = Instantiate(stylePrefab, stylePrefabParent);
             styleItem.Init(product.product_name, product.price, product.description, product.permalink, product.texture_url);
             styleItem.checkBox.SetActive(false);

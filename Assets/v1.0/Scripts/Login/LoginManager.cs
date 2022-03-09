@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviour
 {
@@ -28,19 +29,29 @@ public class LoginManager : MonoBehaviour
 
     private void Start()
     {
+
         UnityEngine.Assertions.Assert.IsNotNull(logInButton);
         UnityEngine.Assertions.Assert.IsNotNull(forgetYourLogInDetailsButton);
         UnityEngine.Assertions.Assert.IsNotNull(logInWithFacebookButton);
         UnityEngine.Assertions.Assert.IsNotNull(dontHaveAnAccountButton);
-        
+
         logInButton.onClick.AddListener(On_Click_LoginButton);
         forgetYourLogInDetailsButton.onClick.AddListener(On_Click_ForgetYourLogInDetailsButton);
         logInWithFacebookButton.onClick.AddListener(On_Click_LogInWithFacebookButton);
         dontHaveAnAccountButton.onClick.AddListener(On_Click_DontHaveAnAccountButton);
+        if (PlayerPrefs.GetInt("logged_in")>0)
+        {
+            loginScene.SetActive(false);
+            homeScene.SetActive(true);
+        }
+       
+       
     }
     
     void On_Click_LoginButton()
     {
+        print("i am called");
+        PlayerPrefs.SetInt("logged_in",1);
         string accId = PlayerPrefs.GetString("Account");
         if (accId != null && accId.Length > 0)
         {
