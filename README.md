@@ -104,6 +104,6 @@ Meta Mask Test Wallet QR Code:
 
 <center><img src="https://i.ibb.co/80JVGPP/14.jpg" height="300px"></center>
 
-Or Secret Recovery Phase:
+Or Secret Recovery Phrase:
 
 ``grain coil excuse immune light duty pumpkin bright tobacco fix come recall``
