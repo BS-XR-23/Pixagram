@@ -2,7 +2,7 @@
 
 1. ***Description***
 
-In Pixagram, we tried to link four fascinating aspects using Unity: <b>Social Media, 3D Avatar Customization, NTF Marketplace, and MetaMask Wallet integration</b>. Here, users will be able to design their own avatars. For instance, changing your outfit, eyewear, and hairstyles. In this app, the outfit, sunglasses, and hairstyle are all considered as an NFT item. Users can use their MetaMask Wallet to purchase these NFT from the OpenSea marketplace and then use it in their avatar.
+Pixagram is a Unity-based application that integrates four exciting features: Social Media, 3D Avatar Customization, NFT Marketplace, and MetaMask Wallet Integration. Users can design their own avatars by customizing outfits, eyewear, and hairstyles. Each customizable item is treated as an NFT. Users can purchase NFTs via their MetaMask Wallet from the OpenSea marketplace and use them within their avatars.
 
 2. **User Manual Only for Major Feature**
 
